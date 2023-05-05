@@ -14,6 +14,11 @@ input_flag = False      # 录音状态
 new_speech_flag = False # 判断该录音文件是否未被处理
 previous_time = 0.0     # 与 curr_time 对应，防止录音事件过多, 发生错误
 
+# about asr
+api_id = 0
+api_key = 0
+secret_key = 0
+
 
 class Config :
     
@@ -42,6 +47,14 @@ class Config :
         input_flag = False 
         new_speech_flag = False 
         previous_time = 0.0
+
+        # init formations about asr
+        global api_id
+        global api_key
+        global secret_key 
+        api_id = self.config_['baidu']['api']['api_id']
+        api_key = self.config_['baidu']['api']['api_key']
+        secret_key = self.config_['baidu']['api']['secret_key']
 
     
     def _check_before_init(self) :

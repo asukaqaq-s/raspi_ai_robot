@@ -51,6 +51,7 @@ class Robot :
             logger.info("退出执行, 回收资源")
 
             # 删除所有缓存程序
+            # expanduser
             for cache_path in ['modules/speech_cache.wav', 'modules/tts_cache.wav', 'modules/tts_cache.mp3'] :
                 if os.path.exists(cache_path) :
                     os.remove(cache_path)
@@ -83,7 +84,7 @@ class Robot :
                 # 1. do speechtotext
                 # 2. 语义解析, 是否有命令
                 # 3. do texttospeech
-                # 4. 最后播放音乐
+                # 4. 最后播放音频
                 pass
 
             time.sleep(0.05)

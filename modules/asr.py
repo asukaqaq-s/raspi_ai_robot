@@ -23,7 +23,7 @@ class BaiduASR :
     def __init__(self) :
         self.speech = baidu_speech.BaiduSpeech()
 
-    def doASR(self, file_path) :
+    def Transcribe(self, file_path) :
         """
         file_path: 文件路径
         return: 语音识别结果, str

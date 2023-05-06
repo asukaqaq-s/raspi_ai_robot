@@ -3,8 +3,11 @@ import time
 import modules.listener as listener
 import RPi.GPIO as GPIO
 import modules.libpy.logging as logging
+import modules.asr as asr
+import modules.tts as tts
 
 from modules.libpy.config import *
+
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +20,10 @@ class Robot :
         self.config_ = Config()
         self._gpio_init()
         self.has_init_ = True
+        
+        # 
+        self.asr = asr.BaiduASR()
+
         pass
 
     def _gpio_init(self) :
@@ -82,10 +89,17 @@ class Robot :
             # 如果新录了一个音
             if new_speech_flag == True :
                 # 1. do speechtotext
-                # 2. 语义解析, 是否有命令
+                
+                
+                # 2. 语义解析, 是否有命令, 返回要回复的字符串
+                
+                
                 # 3. do texttospeech
+                
+                
                 # 4. 最后播放音频
-                pass
+                
+                
 
             time.sleep(0.05)
 

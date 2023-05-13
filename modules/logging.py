@@ -1,7 +1,8 @@
 import logging
 import os
-import constants
 
+
+import modules.constants as constants
 from logging.handlers import RotatingFileHandler
 
 PAGE = 4096

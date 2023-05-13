@@ -11,14 +11,14 @@
 """
 
 
-from libpy.config import *
-import libpy.logging as logging
-import baidu_speech
+from modules.config import *
+import modules.logging as logging
+import modules.baidu_speech as baidu_speech
 import json
 
-logger = logging.getLogger(__name__)
+logging = logging.getLogger(__name__)
 
-class BaiduASR :
+class ASR :
     
     def __init__(self) :
         self.speech = baidu_speech.BaiduSpeech()
@@ -34,16 +34,8 @@ class BaiduASR :
 
         err_no = dict_result['err_no']
         if err_no == 0 : # 识别成功
-            
-            text_result_list = dict_result['result']
-
-            #取候选词中的第一个
-            text_result = text_result_list[0]
-        
-            if text_result.endswith(u"，") :
-                text_result = text_result[:-1]
-
-                return text_result
+            return "".join(dict_result["result"])
         else :
-            logger.warning(f"识别结果错误, 错误码 {err_no}")
+            logging.warning(f"识别结果错误, 错误码 {err_no}")
             return None
+

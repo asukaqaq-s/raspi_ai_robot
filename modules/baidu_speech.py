@@ -7,11 +7,10 @@ import json
 import requests
 import uuid
 import base64
-import libpy.logging as logging
+from modules import logging
+from modules.config import *
 
-from libpy.config import *
-
-logger = logging.getLogger(__name__)
+logging = logging.getLogger(__name__)
 
 class BaiduSpeech(object) :
     
@@ -23,31 +22,28 @@ class BaiduSpeech(object) :
         # 语音合成的 api 地址
         self.tts_api_url = "http://tsn.baidu.com/text2audio"
         # 获取 access token
-        self.access_url = "https://openapi.baidu.com/oauth/2.0/token"
+        self.access_url = "https://aip.baidubce.com/oauth/2.0/token"
         self.my_mac = uuid.UUID(int = uuid.getnode()).hex[-12:]
 
         # api 访问的表单数据
         global api_key
         global secret_key
+
         self.api_key, self.secret_key = api_key, secret_key
-        
-        self.token = self.FetchToken()
-        
+        self.access_token = self.FetchToken()
+
         self.cnt = 0
         
 
         
     def FetchToken(self) :
-        if self.token != None :
-            return self.token
-
-        body = {
-            "grant_type": "client_credentials",
-            "client_id": self.api_key,
-            "client_secret": self.secret_key,
-        }
-
         try :
+            body = {
+                "grant_type": "client_credentials",
+                "client_id": self.api_key,
+                "client_secret": self.secret_key,
+            }
+
             access_page = requests.post(
                 self.access_url,
                 headers={"Content-Type": "application/json; charset=UTF-8"}, 
@@ -58,7 +54,7 @@ class BaiduSpeech(object) :
 
             return access_token
         except :
-            logger.error("获取 access token 异常")
+            logging.error("获取 access token 异常")
             exit(0)
 
     def ASR(self, file_path): 
@@ -79,7 +75,7 @@ class BaiduSpeech(object) :
             'rate' : 8000, # 采样率
             'channel' : 1,
             'cuid' : self.my_mac,
-            'token' : self.token,
+            'token' : self.access_token,
             'lan' : 'zh', # language
             'speech' : speech_b64_data,
             'len' : speech_data_length
@@ -91,10 +87,10 @@ class BaiduSpeech(object) :
         # request header
         post_headers = {
             'Content-Type' : 'application/json',
-            'Content-length' : json_data_length
+            'Content-length' : str(json_data_length)
         }
 
-        logger.info("正在发送录音数据到网络")
+        logging.info("正在发送录音数据到网络")
         
         try :
             result_page = requests.post(
@@ -104,10 +100,10 @@ class BaiduSpeech(object) :
             )
         
         except requests.exceptions.Timeout :
-            logger.error("数据 post 超时")
+            logging.error("数据 post 超时")
             return None
 
-        logger.info("数据发送成功")
+        logging.info("数据发送成功")
         return result_page
 
 
@@ -120,7 +116,7 @@ class BaiduSpeech(object) :
         if target_text == None:
             return None
         
-        logger.info("开始语音合成")
+        logging.info("开始语音合成")
         # 构造请求表单
         tts_form = {
             'tex' : target_text ,
@@ -129,25 +125,24 @@ class BaiduSpeech(object) :
             'ctp' : 1 , #客户端类型选择
             'cuid' : self.my_mac ,
             #以下为选填的项目
-            'spq' : 5 , #语速
-            'pit' : 5 ,  #语调
+            'spq' : 3 , #语速
+            'pit' : 4 , #语调
             'vol' : 5 , #音量
-            'per' : 0  #发音人选择,0为女声,1为男声
+            'per' : 0   #发音人选择,0~4
 		}
 
         # 发送请求给 baidu_tts
         try :
             tts_result_page = requests.post(self.tts_api_url, data=tts_form, timeout=2)
         except requests.exceptions.Timeout :
-            logger.error("语音合成 post 超时")
+            logging.error("语音合成 post 超时")
             return None
         
         return tts_result_page
 
 
 
-        
-        
+if __name__ == "__main__" :
+    speech = BaiduSpeech() 
 
-        
-
+    

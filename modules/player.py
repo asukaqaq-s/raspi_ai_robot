@@ -1,30 +1,71 @@
 """
+@brief
 播放音乐、音频的类
-由于只有一个消费者(录音 listener), 一个生产者 (player), 不需要锁
 """
 
 import threading
 import queue
 import os
+import time
+import modules.logging as logging
 
 
-class Player :
+logger = logging.getLogger(__name__)
+
+# 播放任务类
+class PlayTask :
+    
+    def __init__(self, play_time, file_path, delay = False) :
+        self.play_time = play_time
+        self.file_path = file_path
+        self.is_delay = delay
+        
+
+class Player(threading.Thread) :
     
     def __init__(self) :
-        """
-        self.playing = False
-        self.proc = None
-        
-        self.complete_queue = []
+        threading.Thread.__init__(self)
         self.play_lock = threading.Lock()
-        self.play_queue = queue.Queue() # 播放队列
-        """
+        self.play_queue = [] # 播放队列
+        
 
-    def doPlay(self) :
-        # os.system('mpg123 -q -w ./tts_cache.wav ./tts_cache.mp3')
-        # os.system('aplay -Dplughw:CARD=Device ./tts_cache.wav')
-        os.system("mplayer ./tts_cache.wav")
+    def run(self) :
 
-if __name__ == "__main__" :
-    player = Player()
-    player.doPlay()
+        while True:
+            
+            # 如果是空的, 那么就跳过
+            if len(self.play_queue) == 0:
+                time.sleep(0.1) # sleep 0.1 second to reduce cost
+                continue
+
+            self.play_lock.acquire()
+            
+            # 遍历找到一个可以播放的音频
+            vic = 0
+            index = 0
+            for i in self.play_queue :
+                if i.is_delay == False or i.play_time <= time.time() :
+                    vic = i 
+                    break
+                index += 1
+            
+            # 此时删除这个音频任务
+            self.play_queue.pop(index)
+            self.play_lock.release()
+            
+            logger.info(f"开始播放 {vic.file_path}")        
+            os.system(f"mplayer {vic.file_path}")
+            logger.info(f"结束播放")
+
+            # 另一种播放的思路
+            # os.system('mpg123 -q -w .s_cache.wav .s_cache.mp3')
+            # os.system('aplay -Dplughw:CARD=Device .s_cache.wav')
+            
+        
+    def Add(self, task) :
+        self.play_lock.acquire()
+        self.play_queue.append(task)
+        self.play_lock.release()
+        print(len(self.play_queue))
+
+

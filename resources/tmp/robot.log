@@ -3322,3 +3322,720 @@ Stack (most recent call last):
 2023-05-13 22:54:01,822 - __main__ - robot.py - Run - line 43 - INFO - 退出执行, 回收资源
 2023-05-13 22:54:01,834 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人退出执行
 2023-05-13 22:54:01,850 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:08:33,629 - __main__ - robot.py - Run - line 35 - INFO - 开始执行
+2023-05-13 23:08:33,640 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人开始执行
+2023-05-13 23:08:33,657 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:08:34,225 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-13 23:08:34,252 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-13 23:08:37,667 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:09:07,827 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:09:10,308 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:09:10,312 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:09:10,518 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:09:10,536 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 今天是星期几？
+2023-05-13 23:09:10,722 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：今天星期五哦！
+2023-05-13 23:09:10,738 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：今天星期五哦！
+2023-05-13 23:09:10,755 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:09:11,077 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-13 23:09:11,083 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-13 23:09:14,008 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:09:39,704 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:09:42,159 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:09:42,162 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:09:42,380 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:09:42,392 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 今天是几月几号？
+2023-05-13 23:09:42,604 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：今天是阳历2月9日，阴历正月十九
+2023-05-13 23:09:42,616 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：今天是阳历2月9日，阴历正月十九
+2023-05-13 23:09:42,632 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:09:43,045 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-13 23:09:43,107 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-13 23:09:48,204 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:09:58,703 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:10:01,986 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:10:01,990 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:10:02,273 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:10:02,284 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 今年是201几年。
+2023-05-13 23:10:02,485 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：明年是今年的年份加上一哦，你可以看一看今年是几年就知道明年是几年了呀
+2023-05-13 23:10:02,501 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：明年是今年的年份加上一哦，你可以看一看今年是几年就知道明年是几年了呀
+2023-05-13 23:10:02,517 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:10:03,047 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-13 23:10:03,059 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-13 23:10:11,775 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:10:40,964 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:10:44,000 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:10:44,004 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:10:44,347 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:10:44,359 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 大乱斗，应该选什么英雄比较好？
+2023-05-13 23:10:44,611 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：祝你匹配到擅长的英雄。
+2023-05-13 23:10:44,623 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：祝你匹配到擅长的英雄。
+2023-05-13 23:10:44,650 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:10:44,996 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-13 23:10:45,069 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-13 23:10:48,886 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:11:01,878 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:11:03,879 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:11:03,881 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:11:04,126 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:11:04,137 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 胡歌的老婆是谁？
+2023-05-13 23:11:04,356 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：很是喜欢的男神演员胡歌。
+2023-05-13 23:11:04,367 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：很是喜欢的男神演员胡歌。
+2023-05-13 23:11:04,384 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:11:04,989 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-13 23:11:05,030 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav
+2023-05-13 23:11:09,118 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:11:24,772 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:11:27,083 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:11:27,086 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:11:27,373 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:11:27,384 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 别的呢别的百度是不是很垃圾？
+2023-05-13 23:11:27,553 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：我们聊聊其他内容吧！
+2023-05-13 23:11:27,564 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：我们聊聊其他内容吧！
+2023-05-13 23:11:27,580 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:11:27,897 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav 到播放队列
+2023-05-13 23:11:27,968 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav
+2023-05-13 23:11:31,235 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:12:00,888 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:12:04,617 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:12:04,621 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:12:04,935 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:12:04,947 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 你是不是一个臭傻逼？我操。
+2023-05-13 23:12:05,107 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：我们换个话题聊聊吧！
+2023-05-13 23:12:05,123 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：我们换个话题聊聊吧！
+2023-05-13 23:12:05,139 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:12:05,450 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav 到播放队列
+2023-05-13 23:12:05,501 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav
+2023-05-13 23:12:09,015 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:12:09,151 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:12:13,628 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:12:13,633 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:12:13,933 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:12:13,946 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 最近怎么样？
+2023-05-13 23:12:14,152 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：最近挺好的呀，我觉得每天都很开心呢
+2023-05-13 23:12:14,164 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：最近挺好的呀，我觉得每天都很开心呢
+2023-05-13 23:12:14,180 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:12:14,574 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav 到播放队列
+2023-05-13 23:12:14,590 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav
+2023-05-13 23:12:19,595 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:12:20,343 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:12:27,859 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:12:27,867 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:12:28,592 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:12:28,603 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 你脑子如果有问题，你就先去看脑子，还是先去看书，还是先去看着。
+2023-05-13 23:12:28,854 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：欢迎提出宝贵意见
+2023-05-13 23:12:28,865 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎提出宝贵意见
+2023-05-13 23:12:28,881 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:12:29,144 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache9.wav
+2023-05-13 23:12:29,150 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache9.wav 到播放队列
+2023-05-13 23:12:32,502 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:12:35,278 - __main__ - robot.py - Run - line 43 - INFO - 退出执行, 回收资源
+2023-05-13 23:12:35,289 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人退出执行
+2023-05-13 23:12:35,306 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:15:40,150 - __main__ - robot.py - Run - line 35 - INFO - 开始执行
+2023-05-13 23:15:40,161 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人开始执行
+2023-05-13 23:15:40,178 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:15:40,553 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-13 23:15:40,553 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-13 23:15:43,765 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:15:59,911 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:16:02,274 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:16:02,278 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:16:02,522 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:16:02,534 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 今天星期几？
+2023-05-13 23:16:02,736 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：今天是星期六
+2023-05-13 23:16:02,752 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：今天是星期六
+2023-05-13 23:16:02,769 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:16:03,026 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-13 23:16:03,129 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-13 23:16:06,252 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:17:49,412 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:17:52,960 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:17:52,964 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:17:53,310 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:17:53,322 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 大乱斗，应该选什么英雄比较好？
+2023-05-13 23:17:53,534 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：不会玩那个
+2023-05-13 23:17:53,545 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：不会玩那个
+2023-05-13 23:17:53,561 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:17:53,871 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-13 23:17:53,922 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-13 23:17:55,352 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:18:06,416 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-13 23:18:09,729 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-13 23:18:09,733 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-13 23:18:10,201 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-13 23:18:10,212 - modules.conversation - conversation.py - doConverse - line 56 - INFO - 识别成功, 内容为 大乱斗，应该要去做身体中心比较好。
+2023-05-13 23:18:10,396 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：祝你匹配到擅长的英雄。
+2023-05-13 23:18:10,407 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：祝你匹配到擅长的英雄。
+2023-05-13 23:18:10,424 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-13 23:18:10,700 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-13 23:18:10,742 - modules.player - player.py - run - line 56 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-13 23:18:14,566 - modules.player - player.py - run - line 58 - INFO - 结束播放
+2023-05-13 23:20:21,218 - __main__ - robot.py - Run - line 43 - INFO - 退出执行, 回收资源
+2023-05-13 23:20:21,229 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人退出执行
+2023-05-13 23:20:21,245 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 17:38:58,997 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.wav
+2023-05-14 17:38:59,016 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 17:54:34,908 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.wav
+2023-05-14 17:54:34,923 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:17:18,794 - __main__ - robot.py - login - line 78 - INFO - 开始进入登录界面
+2023-05-14 18:17:18,811 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:17:18,827 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:17:19,372 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:17:20,053 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:17:20,265 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:17:20,300 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:19:24,127 - __main__ - robot.py - login - line 78 - INFO - 开始进入登录界面
+2023-05-14 18:19:24,138 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:19:24,154 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:19:24,484 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:19:24,578 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:19:24,604 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:19:25,179 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:19:25,193 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:19:25,217 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:19:25,436 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 18:19:25,612 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 18:19:25,627 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:19:26,465 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:19:26,486 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:19:26,738 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 18:19:27,641 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 18:19:27,702 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:19:27,762 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:19:27,766 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:19:28,051 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 18:19:28,727 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 18:19:28,767 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:22:21,609 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.mp3
+2023-05-14 18:22:21,633 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:22:21,635 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:22:22,317 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:22:22,319 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:22:22,335 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:23:22,667 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.mp3
+2023-05-14 18:23:22,671 - modules.player - player.py - stop - line 84 - INFO - 当前播放任务被暂停
+2023-05-14 18:23:22,718 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:23:22,720 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:23:22,722 - modules.player - player.py - stop - line 84 - INFO - 当前播放任务被暂停
+2023-05-14 18:23:23,057 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:23:23,058 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:23:23,059 - modules.player - player.py - stop - line 84 - INFO - 当前播放任务被暂停
+2023-05-14 18:23:23,074 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:24:54,581 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.mp3
+2023-05-14 18:24:54,582 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:24:54,598 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:24:54,600 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:24:54,603 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:24:54,958 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:24:54,959 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:24:54,961 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:24:54,977 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:26:30,392 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.mp3
+2023-05-14 18:26:30,403 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:26:30,423 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:26:30,424 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:26:30,425 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:26:30,759 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:26:30,760 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:26:30,761 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:26:30,778 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:27:10,410 - modules.player - player.py - run - line 57 - INFO - 开始播放 ./tts_cache.mp3
+2023-05-14 18:27:10,424 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.NothingSpecial
+2023-05-14 18:27:10,426 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:27:10,447 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:27:10,449 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:27:10,451 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.Opening
+2023-05-14 18:27:10,453 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:27:10,808 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:27:10,810 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:27:10,811 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.Opening
+2023-05-14 18:27:10,813 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:27:10,826 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:28:03,878 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:28:03,900 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.NothingSpecial
+2023-05-14 18:28:03,903 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:28:03,913 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:28:03,915 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:28:03,918 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.NothingSpecial
+2023-05-14 18:28:03,920 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:28:04,234 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:28:04,236 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:28:04,237 - modules.player - player.py - get_state - line 114 - INFO - 当前播放状态为 State.Opening
+2023-05-14 18:28:04,239 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:28:04,251 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:26,458 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:30:27,466 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:27,475 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:27,476 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:30:28,478 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:28,489 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:28,494 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:30:29,499 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:29,513 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:40,574 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:30:42,578 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:42,599 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:42,600 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:30:44,604 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:45,078 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:45,080 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:30:47,085 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:30:47,101 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:30:58,068 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:31:03,076 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:31:03,092 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:31:03,095 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:31:08,104 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:31:08,116 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:31:08,121 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:31:13,129 - modules.player - player.py - stop - line 87 - INFO - 当前播放任务被暂停
+2023-05-14 18:31:13,224 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:32:23,703 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:32:23,705 - modules.player - player.py - play - line 72 - INFO - self.mida = -1
+2023-05-14 18:32:23,706 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:32:23,720 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:32:23,722 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:32:23,725 - modules.player - player.py - play - line 72 - INFO - self.mida = 0
+2023-05-14 18:32:23,727 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:32:24,063 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:32:24,064 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:32:24,065 - modules.player - player.py - play - line 72 - INFO - self.mida = 0
+2023-05-14 18:32:24,066 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:32:24,081 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:34:36,800 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:34:36,817 - modules.player - player.py - play - line 72 - INFO - self.mida = -1
+2023-05-14 18:34:36,819 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:34:36,828 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:34:36,830 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:34:36,832 - modules.player - player.py - play - line 72 - INFO - self.mida = 0
+2023-05-14 18:34:36,834 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:34:37,183 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:34:37,184 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:34:37,186 - modules.player - player.py - play - line 72 - INFO - self.mida = 0
+2023-05-14 18:34:37,187 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:34:37,200 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:38:05,009 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:38:05,011 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:38:13,935 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:38:13,939 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:38:47,411 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:38:47,413 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:39:05,917 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:39:05,918 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:39:43,558 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:39:43,565 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:17,195 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:40:17,200 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:17,260 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:40:17,262 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:40:17,264 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:17,619 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:40:17,620 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:40:17,621 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:17,651 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:40:31,776 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:40:31,779 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:32,304 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:40:32,305 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:40:32,307 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:32,819 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:40:32,820 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:40:32,822 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:40:33,359 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:41:08,964 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:41:08,968 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:41:11,997 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:41:11,999 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:41:11,999 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:41:17,517 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:41:17,519 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:41:17,521 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:41:23,544 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:06,471 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:42:06,507 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:06,510 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:42:06,849 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:06,850 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:42:06,867 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:46,811 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:42:46,861 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:46,862 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:42:47,263 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:42:47,265 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:42:47,282 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:14,981 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:43:14,984 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:43:15,025 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:15,026 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:43:15,028 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:43:15,374 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:15,376 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:43:15,377 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:43:15,393 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:28,815 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:43:28,818 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:43:31,373 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:31,377 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:43:31,380 - modules.player - player.py - stop - line 88 - INFO - 当前播放任务被暂停
+2023-05-14 18:43:46,175 - modules.player - player.py - run - line 57 - INFO - 开始播放 tts_cache.mp3
+2023-05-14 18:43:48,715 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:48,717 - modules.player - player.py - run - line 57 - INFO - 开始播放 test.wav
+2023-05-14 18:43:54,230 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:43:54,231 - modules.player - player.py - run - line 57 - INFO - 开始播放 test1.wav
+2023-05-14 18:44:00,244 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:44:30,706 - __main__ - robot.py - login - line 78 - INFO - 开始进入登录界面
+2023-05-14 18:44:30,717 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:44:30,734 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:44:31,225 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:44:31,896 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:44:31,908 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:44:31,930 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:44:32,141 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 18:44:32,159 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:44:33,159 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:44:33,177 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:44:33,393 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 18:44:34,416 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:44:34,439 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:44:34,794 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 18:44:36,281 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:44:36,297 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 18:44:37,353 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:44:37,364 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 18:44:38,420 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:44:38,431 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 18:44:39,492 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:42,039 - __main__ - robot.py - login - line 78 - INFO - 开始进入登录界面
+2023-05-14 18:45:42,056 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:45:42,073 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:42,421 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:45:42,496 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:45:43,103 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:45:43,116 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:45:43,134 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:43,363 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 18:45:44,381 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:45:44,398 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:44,602 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 18:45:45,621 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:45:45,639 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:45,888 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 18:45:46,616 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:46,627 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 18:45:47,681 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:47,693 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 18:45:48,747 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:48,759 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 18:45:49,789 - modules.face - face.py - Recognize - line 73 - INFO - 其他原因
+2023-05-14 18:45:49,848 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:51,813 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：人脸核验不通过, 请再试一次
+2023-05-14 18:45:51,830 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:52,139 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-14 18:45:52,838 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:45:52,849 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:45:52,865 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:52,877 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-14 18:45:53,069 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-14 18:45:54,087 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:45:54,104 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:54,335 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav 到播放队列
+2023-05-14 18:45:55,358 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:45:55,376 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:45:55,594 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav 到播放队列
+2023-05-14 18:45:56,462 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:56,474 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav
+2023-05-14 18:45:57,534 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:57,545 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav
+2023-05-14 18:45:58,603 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:45:58,616 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav
+2023-05-14 18:45:58,929 - modules.face - face.py - Recognize - line 73 - INFO - 其他原因
+2023-05-14 18:45:59,675 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:46:00,954 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：人脸核验不通过, 请再试一次
+2023-05-14 18:46:00,972 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:46:01,305 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav 到播放队列
+2023-05-14 18:46:01,700 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav
+2023-05-14 18:46:02,019 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:46:02,031 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:46:02,050 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:46:02,243 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache9.wav 到播放队列
+2023-05-14 18:46:03,266 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:46:03,284 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:46:03,529 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache10.wav 到播放队列
+2023-05-14 18:47:45,423 - __main__ - robot.py - login - line 78 - INFO - 开始进入登录界面
+2023-05-14 18:47:45,435 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:47:45,451 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:45,839 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:47:45,902 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:47:46,529 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:47:46,541 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:47:46,559 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:46,782 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 18:47:47,800 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:47:47,818 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:48,032 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 18:47:49,050 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:47:49,073 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:49,320 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 18:47:49,968 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:47:49,969 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 18:47:50,979 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:47:50,995 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 18:47:52,042 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:47:52,074 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 18:47:53,115 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:47:53,221 - modules.face - face.py - Recognize - line 73 - INFO - 其他原因, IAM Certification failed
+2023-05-14 18:47:55,245 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：人脸核验不通过, 请再试一次
+2023-05-14 18:47:55,268 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:55,630 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-14 18:47:56,152 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-14 18:47:56,359 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:47:56,371 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:47:56,388 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:56,642 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-14 18:47:57,665 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:47:57,683 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:47:57,909 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav 到播放队列
+2023-05-14 18:54:55,446 - __main__ - robot.py - login - line 82 - INFO - 开始进入登录界面
+2023-05-14 18:54:55,458 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 18:54:55,474 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:54:55,863 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 18:54:55,879 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 18:54:56,587 - modules.face - face.py - get_image - line 92 - INFO - 开始摄像, 并倒计时
+2023-05-14 18:54:56,600 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：三
+2023-05-14 18:54:56,624 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:54:56,861 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 18:54:57,880 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：二
+2023-05-14 18:54:57,899 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:54:58,136 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 18:54:59,160 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：一
+2023-05-14 18:54:59,183 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:54:59,429 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 18:54:59,947 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:54:59,948 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 18:55:00,959 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:55:00,960 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 18:55:01,973 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:55:01,974 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 18:55:02,987 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:55:03,648 - modules.face - face.py - Recognize - line 59 - INFO - 人脸识别成功, 是 asukaqaq, 相似度 95.74626159668
+2023-05-14 18:55:03,661 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：人脸核验通过, 欢迎使用！
+2023-05-14 18:55:03,678 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:55:04,004 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-14 18:55:04,005 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-14 18:55:04,070 - __main__ - robot.py - Run - line 46 - INFO - 开始执行
+2023-05-14 18:55:04,078 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人开始执行
+2023-05-14 18:55:04,108 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 18:55:04,454 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-14 18:55:07,306 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:55:07,313 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav
+2023-05-14 18:55:09,756 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 18:55:14,000 - __main__ - robot.py - Run - line 54 - INFO - 退出执行, 回收资源
+2023-05-14 18:55:14,016 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：机器人退出执行
+2023-05-14 18:55:14,033 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 19:54:51,608 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：开灯成功
+2023-05-14 19:54:51,613 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 19:54:52,060 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 19:54:52,614 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 19:54:54,156 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 19:55:59,969 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：关灯成功
+2023-05-14 19:55:59,972 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 19:56:00,203 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 19:56:00,976 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 19:56:03,024 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 19:57:47,027 - modules.conversation - conversation.py - doSay - line 87 - INFO - 即将朗读语音：关风扇成功
+2023-05-14 19:57:47,029 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 19:57:47,229 - modules.conversation - conversation.py - doSay - line 99 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 19:57:48,033 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 19:57:50,081 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:02:13,242 - __main__ - robot.py - Run - line 54 - INFO - 开始执行
+2023-05-14 20:02:13,254 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人开始执行
+2023-05-14 20:02:13,277 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:02:13,640 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 20:02:14,612 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 20:02:17,301 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:02:26,180 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:02:27,547 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:02:27,550 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:02:27,937 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:02:27,938 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 开灯。
+2023-05-14 20:02:28,008 - modules.conversation - conversation.py - doConverse - line 66 - CRITICAL - 回复失败：'NoneType' object has no attribute 'Query'
+Stack (most recent call last):
+  File "/home/asuka/workbench/raspi_ai_robot/robot.py", line 112, in <module>
+    robot.Run()
+  File "/home/asuka/workbench/raspi_ai_robot/robot.py", line 58, in Run
+    self._task()
+  File "/home/asuka/workbench/raspi_ai_robot/robot.py", line 85, in _task
+    self.conversation.doConverse()
+  File "/home/asuka/workbench/raspi_ai_robot/modules/conversation.py", line 66, in doConverse
+    logger.critical(f"回复失败：{e}", stack_info=True)
+2023-05-14 20:02:40,930 - __main__ - robot.py - Run - line 62 - INFO - 退出执行, 回收资源
+2023-05-14 20:02:40,947 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人退出执行
+2023-05-14 20:02:40,964 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:21,095 - __main__ - robot.py - Run - line 54 - INFO - 开始执行
+2023-05-14 20:03:21,107 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人开始执行
+2023-05-14 20:03:21,124 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:21,482 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 20:03:21,514 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 20:03:23,553 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:24,238 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:24,811 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:24,816 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:25,002 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:25,015 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 台灯。
+2023-05-14 20:03:25,027 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：关灯成功
+2023-05-14 20:03:25,038 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:25,281 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 20:03:26,267 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 20:03:27,888 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:33,170 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:34,761 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:34,764 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:34,948 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:34,960 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 开灯。
+2023-05-14 20:03:34,971 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：开灯成功
+2023-05-14 20:03:34,987 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:35,311 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 20:03:36,005 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 20:03:37,619 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:39,429 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:40,832 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:40,834 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:40,994 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:41,011 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 关灯。
+2023-05-14 20:03:41,022 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：关灯成功
+2023-05-14 20:03:41,038 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:41,242 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 20:03:41,716 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 20:03:43,293 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:46,031 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:47,140 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:47,142 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:47,339 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:47,350 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 开风扇。
+2023-05-14 20:03:47,361 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：开风扇成功
+2023-05-14 20:03:47,383 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:47,650 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-14 20:03:48,358 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-14 20:03:49,813 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:50,485 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:50,956 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:50,960 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:51,175 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:51,193 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 官方站。
+2023-05-14 20:03:51,490 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：你说什么？
+2023-05-14 20:03:51,513 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：你说什么？
+2023-05-14 20:03:51,530 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:51,848 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-14 20:03:52,494 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav
+2023-05-14 20:03:54,049 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:03:54,213 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:03:55,695 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:03:55,697 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:03:55,929 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:03:55,940 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 汪峰范。
+2023-05-14 20:03:56,160 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：什么样的经历，让你说出了这样的话。
+2023-05-14 20:03:56,171 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：什么样的经历，让你说出了这样的话。
+2023-05-14 20:03:56,192 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:03:56,623 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav 到播放队列
+2023-05-14 20:03:57,073 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav
+2023-05-14 20:04:00,748 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:04:11,065 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:04:12,591 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:04:12,593 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:04:12,792 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:04:12,803 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 关风扇。
+2023-05-14 20:04:12,820 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：关风扇成功
+2023-05-14 20:04:12,836 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:04:13,061 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav 到播放队列
+2023-05-14 20:04:14,037 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav
+2023-05-14 20:04:16,218 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:04:34,618 - __main__ - robot.py - Run - line 62 - INFO - 退出执行, 回收资源
+2023-05-14 20:04:34,629 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人退出执行
+2023-05-14 20:04:34,646 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:46,935 - __main__ - robot.py - login - line 93 - INFO - 开始进入登录界面
+2023-05-14 20:05:46,937 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：欢迎使用, 在此之前你需要先登录
+2023-05-14 20:05:46,939 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:47,324 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav 到播放队列
+2023-05-14 20:05:47,413 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache0.wav
+2023-05-14 20:05:48,096 - modules.face - face.py - get_image - line 90 - INFO - 开始摄像, 并倒计时
+2023-05-14 20:05:48,113 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：三
+2023-05-14 20:05:48,131 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:48,448 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav 到播放队列
+2023-05-14 20:05:49,473 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：二
+2023-05-14 20:05:49,491 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:49,704 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav 到播放队列
+2023-05-14 20:05:50,725 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：一
+2023-05-14 20:05:50,748 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:50,998 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav 到播放队列
+2023-05-14 20:05:51,992 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:05:52,006 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache1.wav
+2023-05-14 20:05:53,046 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:05:53,059 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache2.wav
+2023-05-14 20:05:54,106 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:05:54,117 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache3.wav
+2023-05-14 20:05:55,163 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:05:55,362 - modules.face - face.py - Recognize - line 57 - INFO - 人脸识别成功, 是 asukaqaq, 相似度 95.142547607422
+2023-05-14 20:05:55,375 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：人脸核验通过, 欢迎使用！
+2023-05-14 20:05:55,394 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:55,708 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav 到播放队列
+2023-05-14 20:05:55,785 - __main__ - robot.py - Run - line 54 - INFO - 开始执行
+2023-05-14 20:05:55,798 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人开始执行
+2023-05-14 20:05:55,822 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:05:56,127 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav 到播放队列
+2023-05-14 20:05:56,227 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache4.wav
+2023-05-14 20:05:59,585 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:05:59,597 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache5.wav
+2023-05-14 20:06:01,562 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:06:01,752 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:03,088 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:06:03,092 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:06:03,329 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:06:03,341 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 开灯。
+2023-05-14 20:06:03,353 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：开灯成功
+2023-05-14 20:06:03,371 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:06:03,576 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav 到播放队列
+2023-05-14 20:06:03,822 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache6.wav
+2023-05-14 20:06:05,095 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:06:05,408 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:06,551 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:06:06,555 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:06:06,750 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:06:06,768 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 关灯。
+2023-05-14 20:06:06,786 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：关灯成功
+2023-05-14 20:06:06,803 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:06:07,073 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav 到播放队列
+2023-05-14 20:06:07,446 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache7.wav
+2023-05-14 20:06:08,318 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:06:09,067 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:09,790 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:06:09,794 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:06:09,966 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:06:09,984 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 开风扇。
+2023-05-14 20:06:10,003 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：开风扇成功
+2023-05-14 20:06:10,020 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:06:10,302 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav 到播放队列
+2023-05-14 20:06:11,106 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache8.wav
+2023-05-14 20:06:11,112 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:06:13,123 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:06:13,127 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:06:13,160 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:13,570 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:06:13,589 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 播放器成功官方版。
+2023-05-14 20:06:13,857 - modules.ai - ai.py - Ask - line 49 - INFO - turing 回答：像播放器都是高科技呀。
+2023-05-14 20:06:13,870 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：像播放器都是高科技呀。
+2023-05-14 20:06:13,889 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:06:14,158 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache9.wav 到播放队列
+2023-05-14 20:06:14,165 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache9.wav
+2023-05-14 20:06:17,369 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:17,866 - modules.listener - listener.py - _do_record - line 72 - INFO - 开始录音
+2023-05-14 20:06:19,172 - modules.listener - listener.py - _stop_record - line 86 - INFO - 结束录音
+2023-05-14 20:06:19,175 - modules.baidu_speech - baidu_speech.py - ASR - line 93 - INFO - 正在发送录音数据到网络
+2023-05-14 20:06:19,359 - modules.baidu_speech - baidu_speech.py - ASR - line 106 - INFO - 数据发送成功
+2023-05-14 20:06:19,371 - modules.conversation - conversation.py - doConverse - line 57 - INFO - 识别成功, 内容为 关风扇。
+2023-05-14 20:06:19,387 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：关风扇成功
+2023-05-14 20:06:19,403 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成
+2023-05-14 20:06:19,706 - modules.conversation - conversation.py - doSay - line 101 - INFO - 成功添加 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache10.wav 到播放队列
+2023-05-14 20:06:20,460 - modules.player - player.py - run - line 57 - INFO - 开始播放 /home/asuka/workbench/raspi_ai_robot/resources/output/speech_cache10.wav
+2023-05-14 20:06:22,608 - modules.player - player.py - run - line 59 - INFO - 结束播放
+2023-05-14 20:06:35,275 - __main__ - robot.py - Run - line 62 - INFO - 退出执行, 回收资源
+2023-05-14 20:06:35,286 - modules.conversation - conversation.py - doSay - line 89 - INFO - 即将朗读语音：机器人退出执行
+2023-05-14 20:06:35,302 - modules.baidu_speech - baidu_speech.py - TTS - line 119 - INFO - 开始语音合成

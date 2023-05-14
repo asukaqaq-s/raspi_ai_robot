@@ -31,6 +31,10 @@ config_ = ConfigObj('./config.ini', encoding= 'utf-8')
 BUTTON_PIN = int(config_['pins']['BUTTON_PIN'])            # 中断引脚
 NEW_SPEECH_FLAG = False                                    # 判断该录音文件是否未被处理
 
+# about GPIO
+LIGHT_PIN = int(config_['pins']['LIGHT_PIN'])  
+FAN_PIN = int(config_['pins']['FAN_PIN'])  
+
 # about asr and tss
 api_id = config_['baidu']['api']['api_id']
 api_key = config_['baidu']['api']['api_key']
@@ -39,10 +43,10 @@ secret_key = config_['baidu']['api']['secret_key']
 # about turing
 TURING_KEY = config_['baidu']['api']['TURING_kEY']
 
-
-
-
-
+# about face recognition
+face_api_id = config_['baidu']['api']['face_api_id']
+face_api_key = config_['baidu']['api']['face_api_key']
+face_secret_key = config_['baidu']['api']['face_secret_key']
 
 
 

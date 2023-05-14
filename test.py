@@ -10,43 +10,29 @@ import pyaudio
 import wave
 import os
 import sys
+import RPi.GPIO as GPIO
+import time
+import modules.player as player
+import modules.conversation as conversation
+import modules.brain as brain
 
-def voicerecord():
-    CHUNK = 512
-    FORMAT = pyaudio.paInt16
-    CHANNELS = 1
-    RATE = 44100
-    RECORD_SECONDS = 5
-    WAVE_OUTPUT_FILENAME = "./test1.wav"
+GPIO.setmode(GPIO.BCM)
+LIGHT_PIN = 18
+FAN_PIN = 21
+GPIO.setup(LIGHT_PIN, GPIO.OUT)
+GPIO.setup(FAN_PIN, GPIO.OUT)
 
-    p = pyaudio.PyAudio()
+conv = conversation.Conversation()
+b = brain.Brain(conv)
 
-    stream = p.open(format=FORMAT,
-                    channels=CHANNELS,
-                    rate=RATE,
-                    input=True,
-                    frames_per_buffer=CHUNK)
+GPIO.output(FAN_PIN, GPIO.LOW)
+time.sleep(2)
+b.Query("关风扇")
 
-    print("recording...")
 
-    frames = []
-
-    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-        data = stream.read(CHUNK)
-        frames.append(data)
-
-    print("done")
-
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
-
-    wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-    wf.setnchannels(CHANNELS)
-    wf.setsampwidth(p.get_sample_size(FORMAT))
-    wf.setframerate(RATE)
-    wf.writeframes(b''.join(frames))
-    wf.close()
-
-if __name__ == '__main__':
-    voicerecord()
+try:
+    while True:
+        pass
+finally:
+    GPIO.cleanup(LIGHT_PIN)
+    GPIO.cleanup(FAN_PIN)

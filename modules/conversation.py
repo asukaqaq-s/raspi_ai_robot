@@ -14,6 +14,7 @@ import modules.ai as ai
 import modules.player as player
 import modules.logging as logging
 import modules.constants as constants
+import modules.brain as brain
 import traceback
 import os
 
@@ -38,7 +39,7 @@ class Conversation:
             self.tts = tts.TTS()
             self.ai = ai.AI()
             self.player = player.Player()
-            self.Brain = 0
+            self.brain = brain.Brain(self)
             self.tts_index = constants.OUTPUT_SPEECH_PATH
 
             # player start work
@@ -74,10 +75,11 @@ class Conversation:
         :text 查询的文本
         """
 
-        # if self.brain ....
-        # else : # 闲聊
-        msg = self.ai.Ask(text)
-        self.doSay(msg)
+        if self.brain.Query(text) == True: # 技能命中
+            pass        
+        else : # 闲聊
+            msg = self.ai.Ask(text)
+            self.doSay(msg)
 
 
     def doSay(self, text) :

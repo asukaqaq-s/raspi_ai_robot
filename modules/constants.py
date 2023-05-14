@@ -19,6 +19,8 @@ TEMP_PATH = os.path.normpath(
     os.path.join(RESOURCE_PATH, "tmp")
 )
 
+IM_FILE_PATH_STR = os.path.join(TEMP_PATH, "face.jpg")
+
 OUTPUT_SPEECH_PATH = os.path.normpath(
     os.path.join(RESOURCE_PATH, "output")
 )

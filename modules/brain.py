@@ -7,11 +7,13 @@
 from enum import Enum
 import RPi.GPIO as GPIO
 import modules.config as config
-
+import modules.player as Player
+import modules.PlayTask as Task
 class Brain :
 
     def __init__(self, conversation) :
         self.conversation = conversation
+        self.player = Player
 
     def Query(self, msg) :
         res = False
@@ -22,6 +24,10 @@ class Brain :
         if self.islight(msg) == True:
             self.dolight(msg)
             res= True
+        if self.ismusic(msg) == True:
+            self.doMusic(msg)
+            res = True
+        
         
         return res
 
@@ -42,11 +48,31 @@ class Brain :
             return False
 
     def ismusic(self, msg):
-        if "放首" in msg:
+        if "音乐" in msg:
             return True
         else:
             return False
 
+    def isstop(self, msg):
+        if "暂停" in msg:
+            return True
+        else:
+            return False
+
+    def isstart(self, msg):
+        if "播放" in msg:
+            return True
+        else:
+            return False
+
+
+    def doMusic(self, msg):
+        if "播放" in msg:
+            if "面会菜" in msg:
+                task =  Task(0, "面会菜.mp3", False)
+                player.play(task)
+        else:
+            self.player.pause()
     def dofan(self, msg):
         if self.parse_on_off(msg) == 1:
             GPIO.output(config.FAN_PIN, GPIO.LOW)

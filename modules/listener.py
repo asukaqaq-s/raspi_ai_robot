@@ -20,6 +20,11 @@ logger = logging.getLogger(__name__)
 #   如果超过 10s, 自动停止
 class Listener(threading.Thread) :
     
+    def __init__(self, robot):
+        threading.Thread.__init__(self)
+        self.robot = robot # 这里是为了记录机器人状态
+        
+
     def run(self):
         
         self.listening = False
@@ -33,6 +38,7 @@ class Listener(threading.Thread) :
                          f"new_speech_flag = {self.new_speech_flag}")
             
             if GPIO.input(BUTTON_PIN) == GPIO.HIGH and current_time - self.previous_time > 1:
+                
 
                 # 假如有线程正在录音, 应该是发生了错误
                 if self.listening == True :
@@ -69,6 +75,9 @@ class Listener(threading.Thread) :
     
     def _do_record(self) :
 
+        self.listening = True
+        self.robot.state = constants.RobotState.RECORDING
+
         logger.info("开始录音")
         sp_file_path = os.path.join(constants.INPUT_SPEECH_PATH, "speech_cache.wav")
 
@@ -91,6 +100,9 @@ class Listener(threading.Thread) :
             
     def SetSpeechFlag(self):
         self.new_speech_flag = False
+
+    def IsListening(self):
+        return self.listening == True
 
 if __name__ == "__main__" :
 

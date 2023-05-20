@@ -56,5 +56,13 @@ class Skill(Enum):
     VEDIO = 7
 
 
+class RobotState(Enum):
+    DEFAULT = 0   # 可能是 init 状态
+    LOGINING = 1
+    FREE = 2      # 空闲
+    RECORDING = 3 # 录音中
+    EXECUTING = 4 # 执行任务中
+    
+
     
     

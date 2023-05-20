@@ -15,11 +15,9 @@ logger = logging.getLogger(__name__)
 # 播放任务类
 class PlayTask :
     
-    def __init__(self, play_time, url, delay = False) :
+    def __init__(self, play_time, url) :
         self.play_time = play_time
-        self.url = url
-        self.is_delay = delay
-        
+        self.url = url        
 
 class Player(threading.Thread) :
     
@@ -45,7 +43,7 @@ class Player(threading.Thread) :
             vic = 0
             index = 0
             for i in self.play_queue :
-                if i.is_delay == False or i.play_time <= time.time() :
+                if i.play_time <= time.time() :
                     vic = i 
                     break
                 index += 1

@@ -38,6 +38,10 @@ class Robot :
         # 设置风扇的 GPIO
         global FAN_PIN
         GPIO.setup(FAN_PIN, GPIO.OUT)
+
+        # 初始化
+        GPIO.output(LIGHT_PIN, GPIO.HIGH)
+        GPIO.output(FAN_PIN, GPIO.HIGH)
         
 
     def Run(self) :
@@ -63,7 +67,7 @@ class Robot :
             self.conversation.doSay("机器人退出执行")
             
             # 删除所有缓存程序
-            for cache_path in ['resources/input/', 'resources/ouput/', 'resources/tmp/'] :
+            for cache_path in ['resources/input/', 'resources/ouput/'] :
                 if os.path.exists(cache_path) :
                     tmp_path = os.path.join(os.path, cache_path)
                     os.system(f"rm -rf {tmp_path}")

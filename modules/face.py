@@ -106,3 +106,4 @@ class FaceReco :
 
     def close(self):
         self.camera.close()
+

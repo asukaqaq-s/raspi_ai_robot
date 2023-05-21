@@ -13,11 +13,12 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.application import MIMEApplication
-
+import vlc
 logger = logging.getLogger(__name__)
 take_photo_cnt = 0
 take_vedio_cnt = 0
 
+# def open_music(path):
 # 拍张照
 def get_photo():
     camera = PiCamera()

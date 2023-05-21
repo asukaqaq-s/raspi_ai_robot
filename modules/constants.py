@@ -52,8 +52,10 @@ class Skill(Enum):
     LIGHT_OFF = 3
     CLOCK = 4
     PHOTO = 5
-    MUSIC = 6
-    VEDIO = 7
+    VEDIO =6 
+    OPEN_MUSIC =7 
+    SHUTDOWN_MUSIC = 8
+
 
 
 class RobotState(Enum):

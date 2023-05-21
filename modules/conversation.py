@@ -75,8 +75,10 @@ class Conversation:
         :text 查询的文本
         """
 
-        if self.brain.Query(text) == True: # 技能命中
-            pass        
+        res = self.brain.Query(text)
+
+        if res[0] == True: # 技能命中
+            self.doSay(res[1])
         else : # 闲聊
             msg = self.ai.Ask(text)
             self.doSay(msg)

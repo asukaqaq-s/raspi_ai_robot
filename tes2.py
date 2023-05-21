@@ -1,19 +1,32 @@
-import os
-import modules.baidu_speech as baidu_speech
-import modules.constants as constants
-import modules.listener as listener
-import modules.player as player
-import modules.tts as tts
-from modules.config import *
-import modules.ai as Ai
-import RPi.GPIO as GPIO
+from PyQt5.QtCore import QThread, pyqtSignal, QDateTime, QObject
+from PyQt5.QtWidgets import QApplication, QDialog, QLineEdit, QLabel
 import time
-import modules.conversation as conversation
-import modules.asr as asr
-import base64
-from picamera import PiCamera
-from aip import AipFace
-import modules.face as face
+import sys
+import modules.ui as ui
+import threading
 
-con = conversation.Conversation()
-f = face.FaceReco(con)
+
+def func():
+    while True:
+        print(1)
+
+
+class UI(threading.Thread):
+    
+    def run(self):
+        app = QApplication(sys.argv)
+        win = ui.Window()
+        win.show()
+
+        #func()
+        app.exec_()
+
+if __name__ == '__main__':
+    
+    u = UI()
+    u.start()
+    while True:
+        print("111")
+        time.sleep(1)
+    sys.exit()
+

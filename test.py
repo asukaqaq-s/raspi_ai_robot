@@ -15,24 +15,44 @@ import time
 import modules.player as player
 import modules.conversation as conversation
 import modules.brain as brain
+#import jionlp
+import modules.utils as utils
 
-GPIO.setmode(GPIO.BCM)
-LIGHT_PIN = 18
-FAN_PIN = 21
-GPIO.setup(LIGHT_PIN, GPIO.OUT)
-GPIO.setup(FAN_PIN, GPIO.OUT)
-
-conv = conversation.Conversation()
-b = brain.Brain(conv)
-
-GPIO.output(FAN_PIN, GPIO.LOW)
-time.sleep(2)
-b.Query("关风扇")
+# res = jio.parse_time('100天之后', time.time())
+# print(res)
 
 
-try:
-    while True:
-        pass
-finally:
-    GPIO.cleanup(LIGHT_PIN)
-    GPIO.cleanup(FAN_PIN)
+# res = jio.parse_time('每天8点开灯', time.time())
+# print(res)
+
+
+# res = jio.parse_time('每周五下午4点', time.time())
+# print(res)
+
+
+
+# -*- coding: utf-8 -*-
+
+import itchat
+import sqlite3
+import os
+import time
+import requests
+from apscheduler.schedulers.blocking import BlockingScheduler
+import sys
+import threading
+from PyQt5.QtCore import QBasicTimer
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QLineEdit, QGridLayout, QMessageBox, QGroupBox
+from PyQt5 import QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QWidget, QLabel, QApplication
+from PIL import Image
+import numpy as np
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import QPalette, QBrush, QPixmap
+import os
+import RPi.GPIO as GPIO
+
+

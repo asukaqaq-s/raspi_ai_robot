@@ -15,7 +15,7 @@ import modules.utils as utils
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
 import datetime
-
+import vlc
 
 logger = logging.getLogger(__name__)
     
@@ -31,6 +31,8 @@ class SchdTask :
         self.period = period
         self.task_id = -1   
         self.time = self.date_to_time()
+        self.instance = vlc.Instance()
+        self.player = instance.media_player_new()
 
     def date_to_time(self):
         # 先转换为时间数组
@@ -125,8 +127,10 @@ class Scheduler(threading.Thread) :
             self.do_clock(task)
         if task.type == constants.Skill.PHOTO:
             self.do_photo(task)
-        if task.type == constants.Skill.MUSIC:
-            self.do_music(task)
+        if task.type == constants.Skill.OPEN_MUSIC:
+            self.open_music(task)
+        if task.type == constants.Skill.SHUTDOWN_MUSIC:
+            self.shutdown_music(task)
         if task.type == constants.Skill.VEDIO:
             self.do_vedio(task)
 
@@ -153,6 +157,15 @@ class Scheduler(threading.Thread) :
         utils.get_photo()
         utils.send_email_with_photo(constants.PHOTO_FILE_PATH_STR)
     
+    def open_music(self, task):
+        media = self.instance.media_new(path)
+        self.player.set_media(media)
+
+    def shutdown_music(self):
+        state = self.get_state()
+        if state == vlc.State.Playing:
+            self.player.stop()
+
     def do_music(self):
         pass
 

@@ -8,20 +8,11 @@ from enum import Enum
 import time
 import RPi.GPIO as GPIO
 import modules.config as config
-import modules.constants as constants
-import jionlp as jio
-import datetime
-import modules.scheduler as scheduler
-import modules.logging as logging
-
-logger = logging.getLogger(__name__)
-
+import re
 class Brain :
 
     def __init__(self, conversation) :
         self.conversation = conversation
-        self.scheduler = scheduler.Scheduler(conversation)
-        self.scheduler.start()
 
     def Query(self, msg) :
         res = False
@@ -40,15 +31,13 @@ class Brain :
             reply = self.dophoto(msg)
             res= True
         if self.ismusic(msg) == True:
-            reply = self.dophoto(msg)
+            reply = self.domusic(msg)
             res= True
         if self.isvedio(msg) == True:
             res = self.dovedio(msg)
             res= True
-
-
-        return [res, reply]
         
+        return res
 
     def isfan(self, msg):
         if "风扇" in msg:
@@ -67,19 +56,19 @@ class Brain :
             return False
 
     def ismusic(self, msg):
-        if "放首" in msg:
+        if "音乐" in msg:
             return True
         else:
             return False
-        
-    def isphoto(self, msg):
-        if "拍照" in msg:
+
+    def isstop(self, msg):
+        if "暂停" in msg:
             return True
         else:
             return False
-    
-    def isvedio(self, msg):
-        if "录像" in msg or "视频" in msg:
+
+    def isstart(self, msg):
+        if "播放" in msg:
             return True
         else:
             return False
@@ -159,7 +148,15 @@ class Brain :
         
         t = self.get_now()
         delta = None
-        type = constants.Skill.MUSIC
+        type
+        url = None
+        pattern = re.compile(r'音乐播放(.*?)')
+        if "播放" in msg:
+            type = constants.Skill.OPEN_MUSIC
+            url = re.findall(pattern, msg)   
+            url = url + ".mp3"
+        else:
+            type = constants.Skill.SHUTDOWN_MUSIC
         reply = "音乐设置成功"
         
         if self.istime(msg):
@@ -168,9 +165,15 @@ class Brain :
 
 
         if delta == None:
-            self.createtask(type, t)
+            if type is constants.Skill.OPEN_MUSIC:
+                self.createtask(type, t, url)
+            else:
+                self.createtask(type, t)
         else:
-            self.create_delta(type, t, delta)
+            if type is constants.Skill.OPEN_MUSIC:
+                self.create_delta(type, t, delta, url)
+            else:
+                self.create_delta(type, t, delta, None)
         return reply
     
     def dovedio(self, msg):

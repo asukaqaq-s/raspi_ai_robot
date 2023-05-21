@@ -71,6 +71,7 @@ class Brain :
             if "面会菜" in msg:
                 task =  Task(0, "面会菜.mp3", False)
                 player.play(task)
+            
         else:
             self.player.pause()
     def dofan(self, msg):
